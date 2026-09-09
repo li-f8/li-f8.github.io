@@ -7,17 +7,15 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Your Name / Site Title"
-title_separator          : "-"
-name                     : &name "Your Name"
-description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "academicpages/academicpages.github.io"
-
+locale                 : "en-US"
+site_theme             : "default" # 可选 "default", "air", "sunrise" 等，默认即可
+title                  : "Fuwen Li" # 改为你的全名，例如："San Zhang"
+title_separator        : "-"
+name                   : &name "Fuwen Li" # 改为你的全名
+description            : &description "PhD Student in Machine Learning, Deeplearning, Cognitive Science" # 简短描述你的研究领域
+url                    : https://li-f8.github.io # 【必须修改】把 academicpages 改为你的 GitHub 用户名
+baseurl                : "" # 保持为空字符串 ""
+repository             : "li-f8/li-f8.github.io" # 【必须修改】改为你的 GitHub 仓库路径
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
