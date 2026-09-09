@@ -1,15 +1,17 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+I am an incoming PhD student, officially starting in October 2026. My research interests are broadly in machine learning theory and framework implementations, with a current focus on EEG algorithm optimization (including efficiency tuning techniques like LoRA-one) and semantic emotion visualization using frameworks like DeWave. 
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Previously, I have worked on time-series classification algorithms, specifically analyzing the fitting mechanisms of HIVECOTE models, as well as exploring 3D medical image segmentation architectures like Light-UNETR on left atrium datasets. 
+
+I am currently preparing for my upcoming doctoral research and looking forward to sharing my latest work here.
 
 A data-driven personal website
 ======
