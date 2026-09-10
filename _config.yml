@@ -8,14 +8,14 @@
 
 # Basic Site Settings
 locale                 : "en-US"
-site_theme             : "default" # 可选 "default", "air", "sunrise" 等，默认即可
-title                  : "Fuwen Li" # 改为你的全名，例如："San Zhang"
+site_theme             : "default" # "default", "air", "contrast", "dirt", "mint", "sunrise" (see _sass/theme/)
+title                  : "Fuwen Li"
 title_separator        : "-"
-name                   : &name "Fuwen Li" # 改为你的全名
-description            : &description "PhD Student in Machine Learning, Deeplearning, Cognitive Science" # 简短描述你的研究领域
-url                    : https://li-f8.github.io # 【必须修改】把 academicpages 改为你的 GitHub 用户名
-baseurl                : "" # 保持为空字符串 ""
-repository             : "li-f8/li-f8.github.io" # 【必须修改】改为你的 GitHub 仓库路径
+name                   : &name "Fuwen Li"
+description            : &description "Incoming PhD student at the University of Warwick, working on deep learning for EEG."
+url                    : https://li-f8.github.io
+baseurl                : ""
+repository             : "li-f8/li-f8.github.io"
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
 #               Additional customization can be done by editing /_includes/author-profile.html
@@ -24,9 +24,9 @@ author:
   avatar           : "profile.png"
   name             : "Fuwen Li"
   pronouns         : # example: "she/her"  
-  bio              : "Incoming PhD Student @ Warwick University<br>Working on Deep Learning & EEG"
-  location         : "Coventry"
-  employer         : "Warwick University"
+  bio              : '<span class="i18n-en">Incoming PhD Student @ University of Warwick<br>Deep Learning &amp; EEG</span><span class="i18n-zh">华威大学 博士研究生（2026 级）<br>深度学习与脑电信号</span>'
+  location         : '<span class="i18n-en">Coventry, UK</span><span class="i18n-zh">英国 考文垂</span>'
+  employer         : '<span class="i18n-en">University of Warwick</span><span class="i18n-zh">华威大学</span>'
   uri              : # URL
   email            : "Fuwen.Li@warwick.ac.uk" 
 
@@ -36,10 +36,10 @@ author:
   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
-  orcid            : "https://orcid.org/yourorcidurl"
+  orcid            : # URL - e.g. "https://orcid.org/0000-0000-0000-0000"
   semantic         : # URL
   ssrn             : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
@@ -55,7 +55,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Username, e.g. "name.bsky.social"
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
@@ -95,7 +95,6 @@ breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
 future                   : true
 read_more                : "disabled" # if enabled, adds "Read more" links to excerpts
-talkmap_link             : false      #change to true to add link to talkmap on talks page
 comments:
   provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "custom"
   disqus:
@@ -218,34 +217,17 @@ kramdown:
 
 
 # These settings control the types of collections used by the template
+# Only the publications collection is in use. To bring back talks / teaching /
+# portfolio, re-add the collection here plus a matching defaults block below,
+# create the _talks/ (etc.) directory, and add the page and nav entry.
 collections:
-  teaching:
-    output: true
-    permalink: /:collection/:path/
   publications:
-    output: true
-    permalink: /:collection/:path/
-  portfolio:
-    output: true
-    permalink: /:collection/:path/
-  talks:
     output: true
     permalink: /:collection/:path/
 
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: true
-      share: true
-      related: true
   # _pages
   - scope:
       path: ""
@@ -253,15 +235,6 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _teaching
-  - scope:
-      path: ""
-      type: teaching
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comments: true
   # _publications
   - scope:
       path: ""
@@ -271,23 +244,6 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
-  - scope:
-      path: ""
-      type: portfolio
-    values:
-      layout: single
-      author_profile: true
-      share: true
-      comment: true
-  # _talks
-  - scope:
-      path: ""
-      type: talks
-    values:
-      layout: talk
-      author_profile: true
-      share: true
 
 
 # Sass/SCSS

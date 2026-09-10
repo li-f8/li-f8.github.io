@@ -10,6 +10,27 @@
  <link rel="preload" href="{{ base_path }}/assets/css/fontawesome.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="{{ base_path }}/assets/css/fontawesome.css"></noscript>
 
+<!-- Bilingual (English / 中文) support.
+     Mark any element with class "i18n-en" or "i18n-zh"; only the elements of the
+     currently selected language are shown. The language lives on <html data-lang>,
+     is set here before first paint (no flash), and is toggled from the masthead. -->
+<style>
+  html[data-lang="en"] .i18n-zh,
+  html[data-lang="zh"] .i18n-en,
+  html:not([data-lang]) .i18n-zh { display: none !important; }
+</style>
+<script>
+  (function () {
+    var lang;
+    try { lang = window.localStorage.getItem("site-lang"); } catch (e) { /* storage blocked */ }
+    if (lang !== "en" && lang !== "zh") {
+      lang = /^zh/i.test(navigator.language || "") ? "zh" : "en";
+    }
+    document.documentElement.setAttribute("data-lang", lang);
+    document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
+  })();
+</script>
+
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>

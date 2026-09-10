@@ -3,4 +3,28 @@
 <!-- Support for MathJax -->
 <script id="MathJax-script" defer src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-chtml.js"></script>
 
+<!-- Language toggle (see the bilingual block in _includes/head/custom.html) -->
+<script>
+  (function () {
+    function setLang(lang) {
+      document.documentElement.setAttribute("data-lang", lang);
+      document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
+      try { window.localStorage.setItem("site-lang", lang); } catch (e) { /* storage blocked */ }
+    }
+    function bind() {
+      var toggle = document.getElementById("lang-toggle");
+      if (!toggle) return;
+      toggle.addEventListener("click", function (event) {
+        event.preventDefault();
+        setLang(document.documentElement.getAttribute("data-lang") === "zh" ? "en" : "zh");
+      });
+    }
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", bind);
+    } else {
+      bind();
+    }
+  })();
+</script>
+
 <!-- end custom footer snippets -->

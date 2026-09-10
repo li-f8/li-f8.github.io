@@ -1,33 +1,15 @@
-# The following is the order of the links in the header of the website.
+# Header links, in display order. Each title is bilingual: the theme shows only the
+# spans matching the language selected with the EN / 中文 button in the masthead.
 #
-# Changing the order here will adjust the order and you can also add additional
-# links. Removing a link prevents it from showing in the header, but does not
-# prevent it from being included in the site.
-#
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
+# To add the publications page back once you have papers, uncomment the block below
+# and drop one Markdown file per paper into _publications/ (see _publications/_example.md).
 
 main:
-  - title: "Publications"
-    url: /publications/
+  - title: '<span class="i18n-en">Research</span><span class="i18n-zh">研究</span>'
+    url: /research/
 
-  - title: "Talks"
-    url: /talks/    
+  # - title: '<span class="i18n-en">Publications</span><span class="i18n-zh">论文</span>'
+  #   url: /publications/
 
-  - title: "Teaching"
-    url: /teaching/    
-    
-  - title: "Portfolio"
-    url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
-    
-  - title: "CV"
+  - title: '<span class="i18n-en">CV</span><span class="i18n-zh">简历</span>'
     url: /cv/
-    
-  # - title: "CV"
-  #   url: /cv-json/
-    
-  - title: "Guide"
-    url: /markdown/

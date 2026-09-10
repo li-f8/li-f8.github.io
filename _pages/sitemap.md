@@ -1,21 +1,18 @@
 ---
 layout: archive
-title: "Sitemap"
+title: '<span class="i18n-en">Sitemap</span><span class="i18n-zh">站点地图</span>'
+seo_title: "Sitemap"
 permalink: /sitemap/
 author_profile: true
 ---
 
 {% include base_path %}
 
-A list of all the posts and pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.
+<span class="i18n-en">A list of all the pages found on the site. For you robots out there, there is an [XML version]({{ base_path }}/sitemap.xml) available for digesting as well.</span>
+<span class="i18n-zh">本站所有页面的列表。给爬虫准备的还有一份 [XML 版本]({{ base_path }}/sitemap.xml)。</span>
 
-<h2>Pages</h2>
+<h2><span class="i18n-en">Pages</span><span class="i18n-zh">页面</span></h2>
 {% for post in site.pages %}
-  {% include archive-single.html %}
-{% endfor %}
-
-<h2>Posts</h2>
-{% for post in site.posts %}
   {% include archive-single.html %}
 {% endfor %}
 

@@ -1,0 +1,27 @@
+# Small translation table for theme chrome that is rendered by includes rather than
+# written in a page. Use it as {% include t.html key="follow_label" %} — the include
+# emits both languages and the CSS in _includes/head/custom.html shows the active one.
+follow_label:
+  en: "Follow:"
+  zh: "关注："
+follow_button:
+  en: "Follow"
+  zh: "关注"
+feed_label:
+  en: "Feed"
+  zh: "订阅"
+powered_by:
+  en: "Powered by"
+  zh: "技术支持"
+site_map:
+  en: "Sitemap"
+  zh: "站点地图"
+last_updated:
+  en: "Site last updated"
+  zh: "最后更新于"
+email_label:
+  en: "Email"
+  zh: "邮箱"
+website_label:
+  en: "Website"
+  zh: "个人网站"
