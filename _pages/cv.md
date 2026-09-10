@@ -19,8 +19,7 @@ redirect_from:
 Education
 ======
 * Ph.D. in Computer Science, University of Warwick, 2026– (incoming, starting October 2026)
-* M.Sc. in Artificial Intelligence, University of Southampton
-<!-- Add the year to the M.Sc. line above when you want it shown, e.g. "..., University of Southampton, 2025" -->
+* M.Sc. in Artificial Intelligence, University of Southampton, expected December 2026
 
 Research experience
 ======
@@ -50,7 +49,6 @@ Contact
 ======
 * Email: [Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk)
 * GitHub: [li-f8](https://github.com/li-f8)
-* Google Scholar: [profile](https://scholar.google.com/citations?user=PS_CX0AAAAAJ)
 
 </div>
 
@@ -63,8 +61,7 @@ Contact
 教育经历
 ======
 * 计算机科学 博士，华威大学（University of Warwick），2026 年 10 月入学
-* 人工智能 硕士，南安普顿大学（University of Southampton）
-<!-- 想显示年份的话，在上面硕士这行末尾补上，例如「……南安普顿大学（University of Southampton），2025」 -->
+* 人工智能 硕士，南安普顿大学（University of Southampton），2026 年 12 月毕业
 
 研究经历
 ======
@@ -95,6 +92,5 @@ Contact
 ======
 * 邮箱：[Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk)
 * GitHub：[li-f8](https://github.com/li-f8)
-* Google Scholar：[主页](https://scholar.google.com/citations?user=PS_CX0AAAAAJ)
 
 </div>

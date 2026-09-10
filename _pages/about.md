@@ -10,7 +10,7 @@ redirect_from:
 
 <div class="i18n-en" markdown="1">
 
-I am an incoming PhD student at the University of Warwick, starting in October 2026, and I hold an MSc in Artificial Intelligence from the University of Southampton.
+I am an incoming PhD student at the University of Warwick, starting in October 2026, and I am completing an MSc in Artificial Intelligence at the University of Southampton, due to finish in December 2026.
 
 My work sits between machine learning theory and the engineering that makes it usable. The question I keep returning to is *why* a model fits the way it does — which part of it carries the signal, and what can be cut away without losing it. That interest has taken me through three problem domains so far: the fitting mechanisms of HIVE-COTE ensembles in time-series classification, lightweight transformer segmentation with Light-UNETR on left atrium volumes, and now EEG.
 
@@ -20,13 +20,13 @@ I am currently preparing for my doctoral research. Papers, code, and notes will 
 
 ### Get in touch
 
-Email is the fastest way to reach me — [Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk). Code lives on [GitHub](https://github.com/li-f8), and papers will appear on my [Google Scholar profile](https://scholar.google.com/citations?user=PS_CX0AAAAAJ).
+Email is the fastest way to reach me — [Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk). Code lives on [GitHub](https://github.com/li-f8).
 
 </div>
 
 <div class="i18n-zh" markdown="1">
 
-我将于 2026 年 10 月入学华威大学（University of Warwick）攻读博士学位，此前在南安普顿大学（University of Southampton）取得人工智能硕士学位。
+我将于 2026 年 10 月入学华威大学（University of Warwick）攻读博士学位，目前在南安普顿大学（University of Southampton）攻读人工智能硕士，2026 年 12 月毕业。
 
 我的工作处在机器学习理论与工程实现之间。我反复回到的问题是：模型*为什么*会这样拟合——它的哪一部分真正承载了信号，又有哪些可以被裁掉而不损失性能。带着这个问题，我先后做过三类课题：时间序列分类中 HIVE-COTE 集成模型的拟合机制、用 Light-UNETR 在左心房数据上做轻量化的 Transformer 分割，以及现在的 EEG。
 
@@ -36,6 +36,6 @@ EEG 是我目前的重心，它把同一个问题问得更尖锐。神经信号�
 
 ### 联系我
 
-邮件是最快的方式：[Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk)。代码在 [GitHub](https://github.com/li-f8)，论文会同步到 [Google Scholar](https://scholar.google.com/citations?user=PS_CX0AAAAAJ)。
+邮件是最快的方式：[Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk)。代码在 [GitHub](https://github.com/li-f8)。
 
 </div>
