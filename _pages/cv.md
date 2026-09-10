@@ -18,7 +18,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D. in Computer Science, University of Warwick, 2026– (incoming, starting October 2026)
+* Ph.D., University of Warwick, 2026– (incoming, starting October 2026)
+<!-- Add the programme/department and supervisor here once you want them shown -->
 * M.Sc. in Artificial Intelligence, University of Southampton, Oct 2025 – Dec 2026
   * Expected classification: Distinction
 
@@ -75,7 +76,8 @@ Contact
 
 教育经历
 ======
-* 计算机科学 博士，华威大学（University of Warwick），2026 年 10 月入学
+* 博士，华威大学（University of Warwick），2026 年 10 月入学
+<!-- 想显示具体专业/学院与导师的话，在这行补上 -->
 * 人工智能 硕士，南安普顿大学（University of Southampton），2025 年 10 月 – 2026 年 12 月
   * 预计等级：Distinction
 
