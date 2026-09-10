@@ -33,6 +33,7 @@ Research experience
 * **Brain Science and Neurotechnology Internship**, Aug 2026
   * Institute of Science and Technology for Brain-Inspired Intelligence (ISTBI), Fudan University
   * On-site, supervised by Prof. Shouyan Wang; performance rated Excellent
+  * Built a Real-World Living Lab entry for the Future Home Health Innovation Challenge with a team, which won the Best Life Integration Award in the finals
 * 3D medical image segmentation — Light-UNETR architectures on left atrium datasets
 
 Open-source contribution
@@ -91,6 +92,7 @@ Contact
 * **脑科学与神经技术实习**，2026 年 8 月
   * 复旦大学类脑智能科学与技术研究院（ISTBI）
   * 线下实习，指导教师 王守岩 教授；考核评价 Excellent
+  * 与小组共同完成「未来家庭健康创新挑战赛」Real-World Living Lab 赛道的参赛方案，决赛获 Best Life Integration Award
 * 三维医学图像分割——左心房数据集上的 Light-UNETR 架构
 
 开源贡献

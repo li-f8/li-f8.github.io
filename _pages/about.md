@@ -19,7 +19,7 @@ News
 
 **2026/10**: Starting my PhD at the University of Warwick.<br />
 **2026/08**: Completed the 2026 Brain Science and Neurotechnology Internship at the Institute of Science and Technology for Brain-Inspired Intelligence (ISTBI), Fudan University, supervised by Prof. Shouyan Wang.<br />
-**2026/08**: Received the Best Life Integration Award at the Future Home Health Innovation Challenge Finals, hosted by NeuroSpace · BCI Innovation Accelerator and the Neuromodulation and Brain-Machine Interface Centre, Fudan University.<br />
+**2026/08**: Our team project from that internship won the Best Life Integration Award at the Future Home Health Innovation Challenge Finals, hosted by NeuroSpace · BCI Innovation Accelerator and the Neuromodulation and Brain-Machine Interface Centre, Fudan University.<br />
 **2026/06**: My refactor of the HIVE-COTE V1 and V2 classifiers onto a shared modular framework was merged into [aeon](https://github.com/aeon-toolkit/aeon/pull/3386).<br />
 
 Contact
@@ -40,7 +40,7 @@ Email: [Fuwen.Li@warwick.ac.uk](mailto:Fuwen.Li@warwick.ac.uk) · GitHub: [li-f8
 
 **2026/10**：入学华威大学，开始博士研究。<br />
 **2026/08**：完成复旦大学类脑智能科学与技术研究院（ISTBI）2026 年脑科学与神经技术实习项目，指导教师 王守岩 教授。<br />
-**2026/08**：在 NeuroSpace · 脑机接口创新加速器与复旦大学神经调控与脑机接口研究中心主办的「未来家庭健康创新挑战赛」决赛中获 Best Life Integration Award。<br />
+**2026/08**：实习期间的小组项目在 NeuroSpace · 脑机接口创新加速器与复旦大学神经调控与脑机接口研究中心主办的「未来家庭健康创新挑战赛」决赛中获 Best Life Integration Award。<br />
 **2026/06**：将 HIVE-COTE V1 与 V2 分类器重构为共享的模块化框架，[已合并进 aeon 主分支](https://github.com/aeon-toolkit/aeon/pull/3386)。<br />
 
 联系方式
