@@ -24,16 +24,6 @@ Two further commitments shape the work. Ensemble weights are selected on a held-
 
 [Pull request #3386](https://github.com/aeon-toolkit/aeon/pull/3386) to [aeon](https://github.com/aeon-toolkit/aeon), the time-series machine learning toolkit, refactors the HIVE-COTE V1 and V2 ensemble classifiers onto a shared `_BaseHIVECOTE` framework implementing CAWPE probability weighting. Two of the library's flagship classifiers had been carrying substantial duplicated logic; the change removes it while preserving scikit-learn compatibility and the existing public API, with deprecation handling for what had to move. Merged after several rounds of maintainer review with Prof. Tony Bagnall and Dr. Matthew Middlehurst.
 
-## EEG with parameter-efficient tuning
-*Ongoing*
-
-EEG datasets are small, noisy, and expensive to collect, which makes full fine-tuning of large models a poor fit. I work on low-rank adaptation — LoRA-One and related methods — to see how far the efficiency/accuracy trade-off can be pushed on neural recordings, and because the resulting adapters are themselves evidence about which parts of a model carry the signal.
-
-## Semantic and emotion decoding from brain signals
-*Ongoing*
-
-Following the direction opened up by frameworks such as DeWave, I study how semantic and affective content can be decoded from EEG, and how those decoded representations can be visualised in a way that is interpretable rather than merely decorative.
-
 ## Light-UNETR for 3D medical image segmentation
 *Earlier work*
 
@@ -58,16 +48,6 @@ A lightweight UNETR-style architecture for volumetric segmentation, evaluated on
 *2026 年 6 月合并*
 
 向时间序列机器学习工具库 [aeon](https://github.com/aeon-toolkit/aeon) 提交的 [Pull Request #3386](https://github.com/aeon-toolkit/aeon/pull/3386)，把 HIVE-COTE V1 与 V2 两个集成分类器重构到共享的 `_BaseHIVECOTE` 框架上，并在其中实现 CAWPE 概率加权。这两个旗舰分类器此前携带大量重复逻辑，重构在消除重复的同时保持了 scikit-learn 兼容性与既有公开 API，对必须迁移的部分做了弃用处理。经 Prof. Tony Bagnall 与 Dr. Matthew Middlehurst 多轮维护者评审后合并。
-
-## 面向 EEG 的参数高效微调
-*进行中*
-
-脑电数据规模小、噪声大、采集成本高，直接全量微调大模型并不合适。我关注低秩适配方法（LoRA-One 及相关方法）在神经信号上的表现：效率与精度的权衡能推到什么程度，以及训练出的适配器本身能否揭示模型中真正承载信号的部分。
-
-## 脑信号的语义与情感解码
-*进行中*
-
-沿着 DeWave 等框架打开的方向，研究如何从 EEG 中解码语义与情感内容，以及如何把解码得到的表征做成真正可解释、而非仅仅好看的可视化。
 
 ## Light-UNETR 三维医学图像分割
 *早期工作*

@@ -32,8 +32,6 @@ Research experience
 * **Brain Science and Neurotechnology Internship**, Aug 2026
   * Institute of Science and Technology for Brain-Inspired Intelligence (ISTBI), Fudan University
   * On-site, supervised by Prof. Shouyan Wang; performance rated Excellent
-* EEG algorithm optimisation — parameter-efficient tuning (LoRA-One and related methods) for neural signal models
-* Semantic and emotion decoding from EEG, including visualisation of the decoded representations
 * 3D medical image segmentation — Light-UNETR architectures on left atrium datasets
 
 Open-source contribution
@@ -91,8 +89,6 @@ Contact
 * **脑科学与神经技术实习**，2026 年 8 月
   * 复旦大学类脑智能科学与技术研究院（ISTBI）
   * 线下实习，指导教师 王守岩 教授；考核评价 Excellent
-* EEG 算法优化——面向神经信号模型的参数高效微调（LoRA-One 及相关方法）
-* 脑电语义与情感解码，以及解码表征的可视化
 * 三维医学图像分割——左心房数据集上的 Light-UNETR 架构
 
 开源贡献
