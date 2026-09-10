@@ -21,8 +21,10 @@
 </style>
 <script>
   (function () {
-    // English is the default for first-time visitors, whatever their browser
-    // locale; only a previous explicit choice switches the page to Chinese.
+    /* English is the default for first-time visitors, whatever their browser
+       locale; only a previous explicit choice switches the page to Chinese.
+       Note: the compress layout strips newlines inside <script>, so every
+       comment in here must be a block comment, never //. */
     var lang;
     try { lang = window.localStorage.getItem("site-lang"); } catch (e) { /* storage blocked */ }
     if (lang !== "zh") { lang = "en"; }
