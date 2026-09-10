@@ -12,7 +12,7 @@ site_theme             : "default" # "default", "air", "contrast", "dirt", "mint
 title                  : "Fuwen Li"
 title_separator        : "-"
 name                   : &name "Fuwen Li"
-description            : &description "Incoming PhD student at the University of Warwick, working on deep learning for EEG."
+description            : &description "PhD"
 url                    : https://li-f8.github.io
 baseurl                : ""
 repository             : "li-f8/li-f8.github.io"

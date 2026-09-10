@@ -19,6 +19,11 @@ The result the project turns on is a negative one. A 1-nearest-neighbour classif
 
 Two further commitments shape the work. Ensemble weights are selected on a held-out validation split rather than on test accuracy — an earlier test-selected version scored higher, and reporting the honest number costs about a point. And the MAET reproduction is reported with its gap intact: 62.9% against the 71% published, stable across learning rates, which points at undocumented training details rather than a failure to optimise. Diagnostics along the way quantified what actually carries the pipeline: per-subject z-scoring is worth 15–22 points, more than any architectural choice in the comparison.
 
+## HIVE-COTE on a modular base — contribution to `aeon`
+*Merged June 2026*
+
+[Pull request #3386](https://github.com/aeon-toolkit/aeon/pull/3386) to [aeon](https://github.com/aeon-toolkit/aeon), the time-series machine learning toolkit, refactors the HIVE-COTE V1 and V2 ensemble classifiers onto a shared `_BaseHIVECOTE` framework implementing CAWPE probability weighting. Two of the library's flagship classifiers had been carrying substantial duplicated logic; the change removes it while preserving scikit-learn compatibility and the existing public API, with deprecation handling for what had to move. Merged after several rounds of maintainer review with Prof. Tony Bagnall and Dr. Matthew Middlehurst.
+
 ## EEG with parameter-efficient tuning
 *Ongoing*
 
@@ -48,6 +53,11 @@ A lightweight UNETR-style architecture for volumetric segmentation, evaluated on
 整个项目的关键结论是一个否定性结果：一个**只看视频片段时长**的 1-近邻分类器，在跨被试（LOSO）协议下能达到 67.5%、随机划分下 64.3%，而随机猜测只有 14.3%——这远高于我的诚实集成模型在相同协议下的约 41%。SEED-VII 固定的 80 段视频刺激设计，使得只要训练集和测试集共享刺激，标签就会通过片段时长泄漏；因此这个数据集上漂亮的 LOSO 数字很大程度上是伪影。真正高于混淆基线的信号只出现在两种跨视频协议下：LOVO 高出 14.9 个百分点，被试内评估下集成模型高出 11.6 个百分点。
 
 另有两点方法上的坚持。集成权重在留出的验证集上选择，而不是在测试集准确率上挑——早期用测试集选权重的版本数字更好看，换成诚实做法大约损失 1 个百分点。MAET 复现也保留了差距如实报告：62.9%，对比原文的 71%，且在不同学习率下稳定，说明差距来自论文未记录的训练细节，而非我这边没调好。过程中的诊断实验还量化了流程里真正起作用的部分：按被试 z-score 归一化贡献了 15–22 个百分点，比这次比较中任何架构选择的影响都大。
+
+## 把 HIVE-COTE 重构到模块化基类 —— `aeon` 开源贡献
+*2026 年 6 月合并*
+
+向时间序列机器学习工具库 [aeon](https://github.com/aeon-toolkit/aeon) 提交的 [Pull Request #3386](https://github.com/aeon-toolkit/aeon/pull/3386)，把 HIVE-COTE V1 与 V2 两个集成分类器重构到共享的 `_BaseHIVECOTE` 框架上，并在其中实现 CAWPE 概率加权。这两个旗舰分类器此前携带大量重复逻辑，重构在消除重复的同时保持了 scikit-learn 兼容性与既有公开 API，对必须迁移的部分做了弃用处理。经 Prof. Tony Bagnall 与 Dr. Matthew Middlehurst 多轮维护者评审后合并。
 
 ## 面向 EEG 的参数高效微调
 *进行中*
