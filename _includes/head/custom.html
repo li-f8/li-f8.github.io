@@ -21,11 +21,11 @@
 </style>
 <script>
   (function () {
+    // English is the default for first-time visitors, whatever their browser
+    // locale; only a previous explicit choice switches the page to Chinese.
     var lang;
     try { lang = window.localStorage.getItem("site-lang"); } catch (e) { /* storage blocked */ }
-    if (lang !== "en" && lang !== "zh") {
-      lang = /^zh/i.test(navigator.language || "") ? "zh" : "en";
-    }
+    if (lang !== "zh") { lang = "en"; }
     document.documentElement.setAttribute("data-lang", lang);
     document.documentElement.lang = (lang === "zh") ? "zh-CN" : "en";
   })();

@@ -7,8 +7,9 @@ served by GitHub Pages at <https://li-f8.github.io>.
 ## Bilingual content (English / 中文)
 
 The site renders both languages into every page and shows one at a time; the visitor
-switches with the **中文 / EN** button in the header. The choice is stored in
-`localStorage`, and first-time visitors get Chinese only if their browser prefers it.
+switches with the **中文 / EN** button in the header. English is what first-time
+visitors see regardless of their browser locale; a choice made with the button is
+remembered in `localStorage`.
 
 To write bilingual content, wrap each language in a `div` (block) or `span` (inline):
 
