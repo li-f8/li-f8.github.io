@@ -12,7 +12,7 @@ site_theme             : "default" # "default", "air", "contrast", "dirt", "mint
 title                  : "Fuwen Li"
 title_separator        : "-"
 name                   : &name "Fuwen Li"
-description            : &description "PhD"
+description            : &description "PhD student at the University of Warwick, working on deep learning for EEG."
 url                    : https://li-f8.github.io
 baseurl                : ""
 repository             : "li-f8/li-f8.github.io"
@@ -24,7 +24,7 @@ author:
   avatar           : "profile.png"
   name             : "Fuwen Li"
   pronouns         : # example: "she/her"  
-  bio              : '<span class="i18n-en">Incoming PhD Student @ University of Warwick<br>Deep Learning &amp; EEG</span><span class="i18n-zh">华威大学 博士研究生（2026 级）<br>深度学习与脑电信号</span>'
+  bio              : '<span class="i18n-en">PhD Student @ University of Warwick<br>Deep Learning &amp; EEG</span><span class="i18n-zh">华威大学 博士研究生<br>深度学习与脑电信号</span>'
   location         : '<span class="i18n-en">Coventry, UK</span><span class="i18n-zh">英国 考文垂</span>'
   employer         : '<span class="i18n-en">University of Warwick</span><span class="i18n-zh">华威大学</span>'
   uri              : # URL
