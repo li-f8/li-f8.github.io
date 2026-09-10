@@ -23,13 +23,14 @@ Education
 
 Research experience
 ======
+* **MSc dissertation — multimodal emotion recognition on SEED-VII (`seedvii-aeon`)**
+  * University of Southampton, supervised by Prof. Tony Bagnall
+  * Benchmarked classical time-series classifiers from aeon (MultiRocket, Hydra, Arsenal, DrCIF, HIVE-COTE 2), deep-learning baselines (DECNN, EEGNet, InceptionTime), a reproduction of the dataset paper's MAET transformer, and heterogeneous EEG + eye-tracking ensembles across four evaluation protocols
+  * Identified a stimulus-duration confound: clip length alone classifies at 67.5% under LOSO against 14.3% chance, so cross-video protocols are required for any honest claim on this dataset
+  * Reported validation-selected ensemble weights and a documented 8-point gap in the MAET reproduction rather than test-tuned figures
 * EEG algorithm optimisation — parameter-efficient tuning (LoRA-One and related methods) for neural signal models
 * Semantic and emotion decoding from EEG, including visualisation of the decoded representations
-* Time-series classification — analysis of the fitting mechanisms of HIVE-COTE ensembles
 * 3D medical image segmentation — Light-UNETR architectures on left atrium datasets
-<!-- Add dates, institutions and supervisors as they apply, e.g.:
-* 2024–2025: Research Assistant, <Lab>, <University>. Supervisor: <Name>
--->
 
 Skills
 ======
@@ -65,14 +66,14 @@ Contact
 
 研究经历
 ======
+* **硕士毕业设计——SEED-VII 多模态情感识别（`seedvii-aeon`）**
+  * 南安普顿大学，导师 Prof. Tony Bagnall
+  * 在四种评估协议下横向比较 aeon 的经典时间序列分类器（MultiRocket、Hydra、Arsenal、DrCIF、HIVE-COTE 2）、深度学习基线（DECNN、EEGNet、InceptionTime）、对数据集原论文 MAET 模型的复现，以及 EEG 与眼动的异构集成
+  * 发现刺激时长混淆：仅凭片段时长在 LOSO 下即可达到 67.5% 准确率（随机为 14.3%），因此该数据集上任何可信结论都必须建立在跨视频协议之上
+  * 集成权重在验证集上选择而非测试集调优，MAET 复现与原文 8 个百分点的差距如实报告
 * EEG 算法优化——面向神经信号模型的参数高效微调（LoRA-One 及相关方法）
 * 脑电语义与情感解码，以及解码表征的可视化
-* 时间序列分类——HIVE-COTE 集成模型拟合机制分析
 * 三维医学图像分割——左心房数据集上的 Light-UNETR 架构
-
-<!-- 可按需补充时间、单位与导师，例如：
-* 2024–2025：研究助理，<实验室>，<学校>。导师：<姓名>
--->
 
 技能
 ======

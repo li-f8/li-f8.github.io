@@ -10,20 +10,24 @@ author_profile: true
 
 An overview of what I work on. Papers and code will be linked here as they become available.
 
+## Multimodal emotion recognition on SEED-VII — `seedvii-aeon`
+*MSc dissertation, University of Southampton, supervised by Prof. Tony Bagnall*
+
+A single benchmark comparing four families of methods on the SEED-VII emotion dataset under four evaluation protocols: classical time-series classifiers from [aeon](https://github.com/aeon-toolkit/aeon) (MultiRocket, Hydra, Arsenal, DrCIF, HIVE-COTE 2), deep-learning baselines (a compact 1-D DECNN, a DE-reshaped EEGNet, InceptionTime), a faithful reproduction of MAET — the dataset paper's own multimodal transformer — and heterogeneous ensembles of EEG and eye-tracking models.
+
+The result the project turns on is a negative one. A 1-nearest-neighbour classifier that sees *nothing but the duration of each video clip* reaches 67.5% under leave-one-subject-out and 64.3% under random splits, against 14.3% chance — well above the 41% my honest ensemble reaches on the same protocols. SEED-VII's fixed 80-video stimulus design leaks the label through clip length whenever stimuli are shared between training and test data, so a strong LOSO number on this dataset is largely an artefact. Genuine above-confound signal only appears under the two cross-video protocols: +14.9 points under leave-one-video-out, +11.6 for the ensemble under subject-dependent evaluation.
+
+Two further commitments shape the work. Ensemble weights are selected on a held-out validation split rather than on test accuracy — an earlier test-selected version scored higher, and reporting the honest number costs about a point. And the MAET reproduction is reported with its gap intact: 62.9% against the 71% published, stable across learning rates, which points at undocumented training details rather than a failure to optimise. Diagnostics along the way quantified what actually carries the pipeline: per-subject z-scoring is worth 15–22 points, more than any architectural choice in the comparison.
+
 ## EEG with parameter-efficient tuning
 *Ongoing*
 
-EEG datasets are small, noisy, and expensive to collect, which makes full fine-tuning of large models a poor fit. I work on low-rank adaptation methods — LoRA-One and its variants — to see how far the efficiency/accuracy trade-off can be pushed on neural recordings, and what the resulting adapters reveal about which parts of a model actually carry the signal.
+EEG datasets are small, noisy, and expensive to collect, which makes full fine-tuning of large models a poor fit. I work on low-rank adaptation — LoRA-One and related methods — to see how far the efficiency/accuracy trade-off can be pushed on neural recordings, and because the resulting adapters are themselves evidence about which parts of a model carry the signal.
 
 ## Semantic and emotion decoding from brain signals
 *Ongoing*
 
 Following the direction opened up by frameworks such as DeWave, I study how semantic and affective content can be decoded from EEG, and how those decoded representations can be visualised in a way that is interpretable rather than merely decorative.
-
-## Fitting mechanisms of time-series classifiers
-*Earlier work*
-
-I analysed how HIVE-COTE ensembles fit time-series data — where their accuracy actually comes from across the constituent transforms, and what that implies for choosing or simplifying such ensembles.
 
 ## Light-UNETR for 3D medical image segmentation
 *Earlier work*
@@ -36,20 +40,24 @@ A lightweight UNETR-style architecture for volumetric segmentation, evaluated on
 
 以下是我目前和过去的研究方向，相关论文与代码会陆续在此更新。
 
+## SEED-VII 多模态情感识别 —— `seedvii-aeon`
+*硕士毕业设计，南安普顿大学，导师 Prof. Tony Bagnall*
+
+在 SEED-VII 情感数据集上，用四种评估协议横向比较四类方法：来自 [aeon](https://github.com/aeon-toolkit/aeon) 的经典时间序列分类器（MultiRocket、Hydra、Arsenal、DrCIF、HIVE-COTE 2）、深度学习基线（轻量一维 DECNN、按 DE 特征重构的 EEGNet、InceptionTime）、对数据集原论文模型 MAET 的忠实复现，以及 EEG 与眼动模型的异构集成。
+
+整个项目的关键结论是一个否定性结果：一个**只看视频片段时长**的 1-近邻分类器，在跨被试（LOSO）协议下能达到 67.5%、随机划分下 64.3%，而随机猜测只有 14.3%——这远高于我的诚实集成模型在相同协议下的约 41%。SEED-VII 固定的 80 段视频刺激设计，使得只要训练集和测试集共享刺激，标签就会通过片段时长泄漏；因此这个数据集上漂亮的 LOSO 数字很大程度上是伪影。真正高于混淆基线的信号只出现在两种跨视频协议下：LOVO 高出 14.9 个百分点，被试内评估下集成模型高出 11.6 个百分点。
+
+另有两点方法上的坚持。集成权重在留出的验证集上选择，而不是在测试集准确率上挑——早期用测试集选权重的版本数字更好看，换成诚实做法大约损失 1 个百分点。MAET 复现也保留了差距如实报告：62.9%，对比原文的 71%，且在不同学习率下稳定，说明差距来自论文未记录的训练细节，而非我这边没调好。过程中的诊断实验还量化了流程里真正起作用的部分：按被试 z-score 归一化贡献了 15–22 个百分点，比这次比较中任何架构选择的影响都大。
+
 ## 面向 EEG 的参数高效微调
 *进行中*
 
-脑电数据规模小、噪声大、采集成本高，直接全量微调大模型并不合适。我关注低秩适配方法（LoRA-One 及其变体）在神经信号上的表现：效率与精度的权衡能推到什么程度，以及训练出的适配器能否反过来揭示模型中真正承载信号的部分。
+脑电数据规模小、噪声大、采集成本高，直接全量微调大模型并不合适。我关注低秩适配方法（LoRA-One 及相关方法）在神经信号上的表现：效率与精度的权衡能推到什么程度，以及训练出的适配器本身能否揭示模型中真正承载信号的部分。
 
 ## 脑信号的语义与情感解码
 *进行中*
 
 沿着 DeWave 等框架打开的方向，研究如何从 EEG 中解码语义与情感内容，以及如何把解码得到的表征做成真正可解释、而非仅仅好看的可视化。
-
-## 时间序列分类器的拟合机制
-*早期工作*
-
-分析 HIVE-COTE 集成模型在时间序列上的拟合机制：精度究竟来自哪些组成变换，以及这对如何选择、简化这类集成模型意味着什么。
 
 ## Light-UNETR 三维医学图像分割
 *早期工作*
